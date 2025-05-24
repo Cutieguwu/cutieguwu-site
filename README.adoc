@@ -1,0 +1,8 @@
+= Cutieguwu Site
+:toc:
+
+// Hello people reading the README source :)
+
+== Prelude
+
+The Cutieguwu website.
