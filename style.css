@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+}
+
+.viewport {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(test-image.jpg);
+    background-color: rgba(0, 0, 0, 50%);
+    background-position: center;
+    background-size: cover;
+    align-content: start;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-flow: column;
+}
+
+.navigation_pane {
+    padding: 1em;
+    gap: 1em;
+    width: fit-content;
+    align-content: start;
+    display: grid;
+    float: left;
+}
+
+.navigation_logo {
+    color: lightpink;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: fit-content;
+}
+
+.navigation_menu {
+    min-width: fit-content;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 1em;
+}
+
+.nav_body {
+    background-color: rgba(0, 0, 0, 50%);
+    list-style: none;
+    font-size: 100%;
+    border-radius: 50cqh;
+    height: auto;
+    transition: 0.4s ease-out;
+}
+
+.nav_body:hover {
+    transform: scaleX(1.15);
+    transition: 0s ease-in;
+}
+
+.navigation_menu .nav_title {
+    padding-left: 1cqw;
+    padding-right: 1cqw;
+    text-decoration: none;
+    color: lightpink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-out;
+    white-space: nowrap;
+    float: left;
+}
+
+.navigation_menu .nav_title:hover {
+    color: darkviolet;
+    transition: 0s ease-in;
+}
+
+.dropdown {
+    list-style: none;
+}
+
+.dropdown .dropdown_header {
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-auto-flow: column;
+}
+
+.dropdown_header ion-icon {
+    margin-right: 0.5vw;
+    align-self: center;
+    float: right;
+    color: white;
+    transition-duration: 0.25s;
+}
+
+.dropdown_body {
+    display: none;
+}
+
+.dropdown:hover .dropdown_body {
+    display: grid;
+}
+
+.dropdown:hover .dropdown_header {
+    transform: scaleX(1.15);
+}
+
+.dropdown:hover .dropdown_header ion-icon {
+    rotate: 90deg;
+    transition-duration: 0.25s;
+}
+
+.dropdown_body:hover {
+    display: grid;
+}
+
+.main_pane {
+    padding: 1rem;
+    width: auto;
+    background-color: rgba(0, 0, 0, 50%);
+    color: white;
+    float: right;
+}
