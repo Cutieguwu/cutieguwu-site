@@ -8,7 +8,6 @@
     height: 100vh;
     width: 100vw;
     background-image: url(test-image.jpg);
-    background-color: rgba(0, 0, 0, 50%);
     background-position: center;
     background-size: cover;
     align-content: start;
