@@ -1,23 +1,27 @@
 * {
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 h1 {
-    font-size: 4.5vh;
+    font-size: 3.3vh;
 }
 
 h2 {
-    font-size: 3.25vh;
+    font-size: 2.5vh;
 }
 
 p {
-    font-size: 2vh;
+    font-size: 1.65vh;
 }
 
 a {
-    font-size: 2vh;
+    font-size: 1.65vh;
+}
+
+hr {
+    margin: 1.25vh;
 }
 
 .viewport {
@@ -82,7 +86,7 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     white-space: nowrap;
-    font-size: 2.25vh;
+    font-size: 1.65vh;
     padding-left: 1cqw;
     padding-right: 1cqw;
     transition: 0.4s ease-out;
@@ -104,8 +108,8 @@ a {
 .dropdown_header ion-icon {
     margin-right: 0.5vw;
     align-self: center;
-    width: 2.25vh;
-    height: 2vh;
+    width: 1.65vh;
+    height: 1.65vh;
     float: right;
     color: lightpink;
     transition-duration: 0.25s;
