@@ -13,12 +13,13 @@
     align-content: start;
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: min-content 1fr;
 }
 
 .nav_pane {
     padding: 1em;
     gap: 1em;
-    width: fit-content;
+    width: min-content;
     align-content: start;
     display: grid;
     float: left;
@@ -81,7 +82,7 @@
 
 .dropdown .dropdown_header {
     display: grid;
-    grid-template-columns: auto min-content;
+    grid-template-columns: 1fr min-content;
     grid-auto-flow: column;
 }
 
@@ -119,8 +120,7 @@
 
 .main_pane {
     padding: 1rem;
-    width: auto;
-    align-self: center;
+    width: 100%;
     background-color: rgba(0, 0, 0, 50%);
     color: white;
 }
