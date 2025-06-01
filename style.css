@@ -120,7 +120,16 @@
 .main_pane {
     padding: 1rem;
     width: auto;
+    align-self: center;
     background-color: rgba(0, 0, 0, 50%);
     color: white;
-    float: right;
+}
+
+.error_pane {
+    padding: 1rem;
+    width: max-content;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 50%);
+    color: white;
+    border-radius: 1cqh;
 }
