@@ -128,7 +128,7 @@
 .error_pane {
     padding: 1rem;
     width: max-content;
-    align-self: center;
+    margin: auto; /* center object */
     text-align: center;
     background-color: rgba(0, 0, 0, 50%);
     color: white;
