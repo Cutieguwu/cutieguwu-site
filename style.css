@@ -1,7 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-    /*outline: 1px solid red;*/
+    outline: 1px solid red;
+}
+
+h1 {
+    font-size: 4.5vh;
+}
+
+h2 {
+    font-size: 3.25vh;
+}
+
+p {
+    font-size: 2vh;
+}
+
+a {
+    font-size: 2vh;
 }
 
 .viewport {
@@ -10,10 +26,9 @@
     background-image: url(test-image.jpg);
     background-position: center;
     background-size: cover;
-    align-content: start;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: min-content 1fr;
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .nav_pane {
@@ -120,7 +135,6 @@
 
 .main_pane {
     padding: 1rem;
-    width: 100%;
     background-color: rgba(0, 0, 0, 50%);
     color: white;
 }
