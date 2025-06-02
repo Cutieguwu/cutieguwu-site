@@ -27,7 +27,7 @@ hr {
 .viewport {
     height: 100vh;
     width: 100vw;
-    background-image: url(test-image.jpg);
+    background-image: url(img/test-image.jpg);
     background-position: center;
     background-size: cover;
     align-items: flex-start;
