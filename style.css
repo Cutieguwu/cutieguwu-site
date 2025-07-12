@@ -27,9 +27,10 @@ hr {
 .viewport {
     height: 100vh;
     width: 100vw;
-    background-image: url(/img/background.png);
+    background-image: url(img/background.png);
     background-position: center;
     background-size: cover;
+    background-blend-mode: multiply;
     align-items: flex-start;
     display: flex;
     flex-flow: row wrap;
