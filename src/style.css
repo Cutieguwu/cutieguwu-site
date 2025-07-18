@@ -45,6 +45,14 @@ hr {
     float: left;
 }
 
+.nav_pane hr {
+    color: lightpink;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    margin-left: 1.25vh;
+    margin-right: 1.25vh;
+}
+
 .nav_logo {
     color: lightpink;
     font-family: Arial, Helvetica, sans-serif;
