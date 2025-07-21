@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="335mm"
+   height="225mm"
+   viewBox="0 0 335 225"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="colour_theme.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.7046647"
+     inkscape:cx="603.12373"
+     inkscape:cy="523.65331"
+     inkscape:window-width="1920"
+     inkscape:window-height="1042"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Background Layer"
+     style="fill:#ffffff;fill-opacity:1">
+    <rect
+       style="fill:#353535;fill-opacity:1;stroke-width:0.290862"
+       id="rect1"
+       width="225"
+       height="335"
+       x="-280"
+       y="-55"
+       transform="rotate(-90,-2.9791666e-7,-55.000001)"
+       inkscape:label="bg" />
+  </g>
+  <g
+     inkscape:label="Foreground Layer"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="fill:#ffffff;fill-opacity:1"
+     transform="translate(55.000001,-55.000001)">
+    <rect
+       style="fill:#f5f5f5;fill-opacity:1;stroke-width:0.246609;stroke:none;stroke-opacity:1"
+       id="rect2-0-2"
+       width="50"
+       height="50"
+       x="-275"
+       y="170"
+       transform="rotate(-90)"
+       inkscape:label="white-3" />
+    <rect
+       style="fill:#e5e5e5;fill-opacity:1;stroke-width:0.246609;stroke:#000000;stroke-opacity:1"
+       id="rect3-9-3"
+       width="50"
+       height="50"
+       x="-220"
+       y="170"
+       transform="rotate(-90)"
+       inkscape:label="white-2" />
+    <rect
+       style="fill:#d9d9d9;fill-opacity:1;stroke-width:0.246609;stroke:#000000;stroke-opacity:1"
+       id="rect4-3-6"
+       width="50"
+       height="50"
+       x="-165"
+       y="170"
+       transform="rotate(-90)"
+       inkscape:label="white-1" />
+    <rect
+       style="fill:#944db6;fill-opacity:1;display:inline;stroke:#000000;stroke-width:0.246609;stroke-opacity:1"
+       id="rect2"
+       width="50"
+       height="50"
+       x="-110"
+       y="225"
+       transform="rotate(-90)"
+       inkscape:label="highlight-hover" />
+    <rect
+       style="fill:#bfbfbf;fill-opacity:1;stroke-width:0.247;stroke-dasharray:none;stroke:#000000;stroke-opacity:1"
+       id="rect5-6-1"
+       width="50"
+       height="50"
+       x="-110"
+       y="170"
+       transform="rotate(-90)"
+       inkscape:label="white-0" />
+    <rect
+       style="fill:#272727;fill-opacity:1;stroke-width:0.246609"
+       id="rect3-5-6"
+       width="50"
+       height="50"
+       x="-220"
+       y="115"
+       transform="rotate(-90)"
+       inkscape:label="block-2" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:1;stroke-width:0.246609"
+       id="rect4-6-2"
+       width="50"
+       height="50"
+       x="-165"
+       y="115"
+       transform="rotate(-90)"
+       inkscape:label="block-1" />
+    <rect
+       style="fill:#0d0d0d;fill-opacity:1;stroke-width:0.246609"
+       id="rect5-2-6"
+       width="50"
+       height="50"
+       x="-110"
+       y="115"
+       transform="rotate(-90)"
+       inkscape:label="block-0" />
+    <rect
+       style="fill:#2a223e;fill-opacity:1;display:inline;stroke:none;stroke-width:0.246609;stroke-opacity:1"
+       id="rect2-3-0"
+       width="50"
+       height="50"
+       x="-275"
+       y="115"
+       transform="rotate(-90)"
+       inkscape:label="background-4" />
+    <rect
+       style="fill:#211635;fill-opacity:1;stroke-width:0.246609"
+       id="rect3-9"
+       width="50"
+       height="50"
+       x="-275"
+       y="60"
+       transform="rotate(-90)"
+       inkscape:label="background-3" />
+    <rect
+       style="fill:#231833;fill-opacity:1;stroke-width:0.246609"
+       id="rect4-3"
+       width="50"
+       height="50"
+       x="-220"
+       y="60"
+       transform="rotate(-90)"
+       inkscape:label="background-2" />
+    <rect
+       style="fill:#170d28;fill-opacity:1;stroke-width:0.247;stroke-dasharray:none"
+       id="rect5-6"
+       width="50"
+       height="50"
+       x="-165"
+       y="60"
+       transform="rotate(-90)"
+       inkscape:label="background-1" />
+    <rect
+       style="fill:#130b21;fill-opacity:1;stroke:#000000;stroke-width:0.246609;stroke-opacity:1"
+       id="rect2-0"
+       width="50"
+       height="50"
+       x="-110"
+       y="60"
+       transform="rotate(-90)"
+       inkscape:label="background-0" />
+    <rect
+       style="display:inline;fill:#aa7ab7;fill-opacity:1;stroke:#000000;stroke-width:0.246609;stroke-opacity:1"
+       id="rect4"
+       width="50"
+       height="50"
+       x="-275"
+       y="-50"
+       transform="rotate(-90)"
+       inkscape:label="accent-purple" />
+    <rect
+       style="fill:#868ab7;fill-opacity:1;display:inline;stroke:#000000;stroke-width:0.246609;stroke-opacity:1"
+       id="rect3"
+       width="50"
+       height="50"
+       x="-220"
+       y="-50"
+       transform="rotate(-90)"
+       inkscape:label="accent-blue" />
+    <rect
+       style="fill:#ff9f9f;fill-opacity:1;stroke-width:0.246609"
+       id="rect5-2"
+       width="50"
+       height="50"
+       x="-165"
+       y="-50"
+       transform="rotate(-90)"
+       inkscape:label="accent-pink" />
+    <rect
+       style="fill:#cfeb9e;fill-opacity:1;stroke-width:0.246609"
+       id="rect5"
+       width="50"
+       height="50"
+       x="-110"
+       y="-50"
+       transform="rotate(-90)"
+       inkscape:label="accent-green" />
+    <rect
+       style="display:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.246609;stroke-opacity:1"
+       id="rect4-6-2-9"
+       width="50"
+       height="50"
+       x="-165"
+       y="225"
+       transform="rotate(-90)"
+       inkscape:label="unused" />
+    <rect
+       style="display:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.246609;stroke-opacity:1"
+       id="rect4-6"
+       width="50"
+       height="50"
+       x="-110"
+       y="5"
+       transform="rotate(-90)"
+       inkscape:label="unused" />
+    <rect
+       style="display:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.246609;stroke-opacity:1"
+       id="rect2-3"
+       width="50"
+       height="50"
+       x="-275"
+       y="5"
+       transform="rotate(-90)"
+       inkscape:label="unused" />
+    <rect
+       style="display:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.246609;stroke-opacity:1"
+       id="rect3-5"
+       width="50"
+       height="50"
+       x="-220"
+       y="5"
+       transform="rotate(-90)"
+       inkscape:label="unused" />
+    <rect
+       style="display:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.246609;stroke-opacity:1"
+       id="rect2-3-0-7"
+       width="50"
+       height="50"
+       x="-275"
+       y="225"
+       transform="rotate(-90)"
+       inkscape:label="unused" />
+    <rect
+       style="display:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.246609;stroke-opacity:1"
+       id="rect3-5-6-5"
+       width="50"
+       height="50"
+       x="-220"
+       y="225"
+       transform="rotate(-90)"
+       inkscape:label="unused" />
+    <rect
+       style="display:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.246609;stroke-opacity:1"
+       id="rect5-2-6-2"
+       width="50"
+       height="50"
+       x="-165"
+       y="5"
+       transform="rotate(-90)"
+       inkscape:label="unused" />
+  </g>
+</svg>
