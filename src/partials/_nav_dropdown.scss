@@ -1,0 +1,39 @@
+.nav_dropdown {
+    .dropdown_header {
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        align-items: center;
+
+        ion-icon {
+            /*
+            This one aligns visually odd if trying to use the same margins as it's neighbouring nav_title class.
+            */
+            margin-right: 0.5rem;
+
+            align-self: center;
+            transition-duration: 0.25s;
+        }
+    }
+
+    .dropdown_body {
+        display: none;
+        border-bottom-left-radius: var(--border-radius-small);
+        border-bottom-right-radius: var(--border-radius-small);
+        background-color: var(--background-1);
+    }
+}
+
+.nav_dropdown:hover {
+    .dropdown_header {
+        transform: var(--transform-scale-x);
+
+        ion-icon {
+            rotate: 90deg;
+            transition-duration: 0.25s;
+        }
+    }
+
+    .dropdown_body {
+        display: grid;
+    }
+}

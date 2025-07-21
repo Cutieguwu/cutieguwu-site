@@ -1,3 +1,6 @@
+@use "nav_dropdown";
+@use "nav_title";
+
 .nav_menu {
     /*
     Remove default padding and style applied to ul for bullets.
@@ -22,76 +25,13 @@
         transition: var(--transition-fade);
     }
 
-    .dropdown:hover .nav_body,
-    .dropdown .nav_body:hover,
+    .nav_dropdown:hover .nav_body,
     .nav_body:hover {
         transform: var(--transform-scale-x);
         transition: var(--transition-cut);
 
         .nav_title,
         ion-icon {
-            color: var(--highlight-hover);
-            transition: var(--transition-cut);
-        }
-    }
-
-    .dropdown {
-        .dropdown_header {
-            display: grid;
-            grid-template-columns: 1fr min-content;
-            align-items: center;
-
-            ion-icon {
-                /*
-                This one aligns visually odd if trying to use the same margins as it's neighbouring nav_title class.
-                */
-                margin-right: 0.5rem;
-
-                align-self: center;
-                transition-duration: 0.25s;
-            }
-        }
-
-        .dropdown_body {
-            display: none;
-            border-bottom-left-radius: var(--border-radius-small);
-            border-bottom-right-radius: var(--border-radius-small);
-            background-color: var(--background-1);
-        }
-    }
-
-    .dropdown:hover {
-        .dropdown_header {
-            transform: var(--transform-scale-x);
-
-            ion-icon {
-                rotate: 90deg;
-                transition-duration: 0.25s;
-            }
-        }
-
-        .dropdown_body {
-            display: grid;
-        }
-    }
-
-    .nav_body,
-    .dropdown .nav_body,
-    .dropdown .dropdown_body {
-        .nav_title {
-            /* Need to force inheritence, otherwise <a> would require overrides for all color states from base styling for element. */
-            color: inherit;
-
-            text-decoration: none;
-            font-family: var(--font-family-generic);
-            font-weight: bold;
-            white-space: nowrap;
-            margin: 0 var(--spacing-horizontal);
-            transition: var(--transition-fade);
-            text-transform: uppercase;
-        }
-
-        .nav_title:hover {
             color: var(--highlight-hover);
             transition: var(--transition-cut);
         }
