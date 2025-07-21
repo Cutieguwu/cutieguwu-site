@@ -1,0 +1,31 @@
+.pane_spacer {
+    margin: var(--margin-pane);
+    padding: 0;
+    width: 10vw;
+    display: grid;
+    grid-auto-flow: row;
+    gap: var(--spacing-menu-gap);
+
+    .spacer_container {
+        margin: 0;
+        background-color: var(--background-2);
+        height: calc(
+            50vh - var(--margin-pane) - calc(
+                    var(--spacing-menu-gap) / 2
+                )
+        );
+        flex: 1;
+        border-radius: var(--border-radius-small)
+            var(--border-radius-large);
+
+        /* Vertical Text Align */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            margin: 0;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.location {
+    margin: 0;
+    padding: var(--spacing-horizontal);
+    background-color: var(--background-2);
+    border-radius: var(--border-radius-small)
+        var(--border-radius-large);
+    text-align: center;
+
+    .location_header {
+        font-weight: bold;
+        margin: 0 0 0.5rem;
+    }
+
+    .location_page {
+        margin: 0;
+        padding: 0;
+    }
+}

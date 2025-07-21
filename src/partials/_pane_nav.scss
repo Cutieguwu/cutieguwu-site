@@ -1,0 +1,17 @@
+@use "nav_logo";
+@use "nav_menu";
+@use "nav_location";
+@use "nav_quick_links";
+
+.pane_nav {
+    --spacing-horizontal: 0.75rem;
+    --transform-scale-x: scaleX(1.15);
+
+    margin: var(--margin-pane);
+    padding: 0;
+    gap: var(--spacing-menu-gap);
+    width: min-content;
+    align-content: start;
+    display: grid;
+    color: var(--accent-pink);
+}

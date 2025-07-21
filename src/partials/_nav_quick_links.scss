@@ -1,0 +1,54 @@
+.nav_quick_links {
+    --cols: 5;
+    --item-padding: 0.35rem;
+    --item-edge-length: 1.25rem;
+    --item-size: calc(
+        var(--item-edge-length) + calc(var(--item-padding) * 2)
+    );
+
+    /*
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-right: auto;
+    */
+
+    display: grid;
+    grid-template-columns:
+        var(--item-size) var(--item-size) var(--item-size)
+        var(--item-size) var(--item-size);
+    align-items: center;
+
+    gap: var(--spacing-menu-gap)
+        calc(
+            calc(100% - calc(var(--item-size) * var(--cols))) /
+                calc(var(--cols) - 1)
+        );
+
+    a {
+        width: var(--item-size);
+        height: var(--item-size);
+
+        * {
+            width: var(--item-edge-length);
+            height: var(--item-edge-length);
+            padding: var(--item-padding);
+
+            background-color: var(--background-2);
+            border-radius: var(--border-radius-small)
+                var(--border-radius-large);
+        }
+
+        .icon_gitea {
+            color: var(--accent-green);
+        }
+
+        .icon_github {
+            color: var(--accent-blue);
+        }
+
+        .icon_license {
+            color: var(--accent-purple);
+        }
+    }
+}

@@ -1,75 +1,12 @@
 <!doctype html>
+
 <html lang="en-ca">
     <head>
-        <meta charset="utf-8" />
-
         <title>Acknowledgements | Cutieguwu</title>
-
-        <link rel="icon" type="image/x-icon" href="img/test-favicon.jpg" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-
-        <meta name="description" content="Cutieguwu's Official website" />
-        <meta
-            name="viewport"
-            content="width=device-width, height=device-height, initial-scale=1.0"
-        />
-        <meta name="keywords" content="cutieguwu" />
+        <include src="includes/meta.html" />
     </head>
     <body class="viewport">
-        <nav class="nav_pane">
-            <h2 class="nav_logo">Cutieguwu</h2>
-
-            <ul class="nav_menu">
-                <li class="nav_body"><a class="nav_title" href="">Home</a></li>
-                <li class="nav_body">
-                    <a class="nav_title" href="#">About</a>
-                </li>
-                <li class="dropdown">
-                    <div class="dropdown_header nav_body">
-                        <p class="nav_title" href="#">Minecraft</p>
-                        <ion-icon name="chevron-forward-outline"></ion-icon>
-                    </div>
-                    <div class="dropdown_body">
-                        <a class="nav_title" href="#">Bearock SMP</a>
-                        <a class="nav_title" href="#">Rebirth SMP</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <div class="dropdown_header nav_body">
-                        <p class="nav_title">Links</p>
-                        <ion-icon name="chevron-forward-outline"></ion-icon>
-                    </div>
-                    <div class="dropdown_body">
-                        <a class="nav_title" href="https://gitea.cutieguwu.ca">Gitea</a>
-                        <a class="nav_title" href="https://jellyfin.cutieguwu.ca">Jellyfin</a>
-                        <a class="nav_title" href="https://nextcloud.cutieguwu.ca">Nextcloud</a>
-                        <a class="nav_title" href="https://play.cutieguwu.ca">Rebirth</a>
-                        <a class="nav_title" href="https://zotero.cutieguwu.ca">Zotero</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <div class="dropdown_header nav_body">
-                        <a class="nav_title" href="https://pronouns.page/@Cutieguwu"
-                            >Pronoun Pages</a
-                        >
-                        <ion-icon name="chevron-forward-outline"></ion-icon>
-                    </div>
-                    <div class="dropdown_body">
-                        <a class="nav_title" href="https://en.pronouns.page/@Cutieguwu">English</a>
-                        <a class="nav_title" href="https://pronoms.fr/@Cutieguwu">French</a>
-                    </div>
-                </li>
-                <li class="nav_body">
-                    <a class="nav_title" href="#">Other</a>
-                </li>
-                <li class="nav_body">
-                    <a class="nav_title" href="#">Other 2</a>
-                </li>
-                <li class="nav_body">
-                    <a class="nav_title" href="#">Super long titled</a>
-                </li>
-            </ul>
-        </nav>
+        <include src="includes/nav.html" />
         <div class="main_pane">
             <p>There are currently no acknowledgements</p>
             <p>In terms of security, hopefully that means I'm doing a good-ish job.</p>
@@ -78,10 +15,6 @@
                 getting the basics handled.
             </p>
         </div>
-        <script
-            type="module"
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <include src="includes/scripts.html" />
     </body>
 </html>

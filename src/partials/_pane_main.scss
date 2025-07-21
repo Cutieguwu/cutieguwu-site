@@ -1,0 +1,10 @@
+.pane_main {
+    flex: 1;
+    text-align: center;
+    background-color: var(--background-2);
+    margin: var(--margin-pane);
+    padding: 0;
+
+    border-radius: var(--border-radius-small)
+        var(--border-radius-large);
+}

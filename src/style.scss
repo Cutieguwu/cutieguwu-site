@@ -1,0 +1,83 @@
+@use "partials/pane_main";
+@use "partials/pane_nav";
+@use "partials/pane_spacer";
+
+@use "partials/pane_error";
+
+:root {
+    /*
+    0: Base of an element. Example: the viewport class.
+
+    The higher the integer, the lighter the colour, the higher it should be visually, meaning more nested in the cascade.
+
+    Odd numbers should be used as intermediate colours between the fore and back elements. Excepting white--white's special.
+    Eg. Current dropdown menu.
+
+    */
+    font-size: var(--font-size-generic);
+
+    --accent-green: #cfeb9eff;
+    --accent-pink: #ff9f9fff;
+    --accent-blue: #868ab7ff;
+    --accent-purple: #aa7ab7ff;
+
+    --background-0: #130b21ff;
+    --background-1: #170d28ff;
+    --background-2: #231833ff;
+    --background-3: #211635ff;
+    --background-4: #2a223eff;
+
+    --block-0: #0d0d0dff;
+    --block-1: #1a1a1aff;
+    --block-2: #272727ff;
+
+    --highlight-hover: #944db6ff;
+
+    --white-0: #bfbfbfff;
+    --white-1: #d9d9d9ff;
+    --white-2: #e5e5e5ff;
+    --white-3: #f5f5f5ff;
+
+    --font-size-generic: 1.65vh;
+    --font-family-generic: Arial, Sans-Serif, Helvetica;
+
+    --transition-fade: 0.4s ease-out;
+    --transition-cut: none;
+
+    --border-radius-large: 1rem;
+    --border-radius-small: calc(var(--border-radius-large) / 2);
+
+    --margin-pane: 1.5rem;
+
+    --spacing-menu-gap: 1rem;
+}
+
+/*
+* {
+    outline: 1px solid red;
+}
+*/
+
+h1 {
+    font-size: 3.3vh;
+}
+
+h2 {
+    font-size: 2.5vh;
+}
+
+ion-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.viewport {
+    /* Adds a margin otherwise for some reason. */
+    margin: 0;
+
+    background-color: var(--background-0);
+    color: var(--white-3);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}

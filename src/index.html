@@ -1,26 +1,28 @@
 <!doctype html>
+
 <html lang="en-ca">
     <head>
-        <meta charset="utf-8" />
         <title>Home | Cutieguwu</title>
-        <link rel="icon" type="image/x-icon" href="img/test-favicon.jpg" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <meta name="description" content="Cutieguwu's Official website" />
-        <meta
-            name="viewport"
-            content="width=device-width, height=device-height, initial-scale=1.0"
-        />
-        <meta name="keywords" content="cutieguwu" />
+        <include src="includes/meta.html" />
     </head>
     <body class="viewport">
-        <include src="/home/cutieguwu/Workspace/balloon/tests/src/nav.html" />
-        <div class="main_pane">
-            <p>lorem ipsum etc idk what else there is in this latin phrase</p>
+        <nav class="pane_nav">
+            <include src="includes/nav_logo.html" />
+            <include src="includes/nav_menu.html" />
+            <div class="location">
+                <p class="location_header">You are here:</p>
+                <p class="location_page">Home</p>
+            </div>
+            <include src="includes/nav_quick_links.html" />
+        </nav>
+        <div class="pane_main">
+            <h1>Home</h1>
+            <p>lorem ipsum idk what else there is in this latin phrase</p>
         </div>
-        <script
-            type="module"
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="pane_spacer">
+            <div class="spacer_container"><p>#AD</p></div>
+            <div class="spacer_container"><p>#AD</p></div>
+        </div>
+        <include src="includes/scripts.html" />
     </body>
 </html>
