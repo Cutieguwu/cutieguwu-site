@@ -3,9 +3,11 @@ from __future__ import annotations
 from dataclasses import dataclass
 from types import NoneType
 from typing import Optional
+from icecream.icecream import print_function
 from result import Result, Ok, Err
 from icecream import ic
 import os
+import sys
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
@@ -98,10 +100,30 @@ class HTML:
 
 
 def main() -> None:
-    with open(str(WORK_DIR) + '/src/index.html', 'rt') as f:
+    # If:
+    #   Incorrect number of arguments
+    #   Long help flag
+    #   Short help flag
+    if len(sys.argv) != 1 or (
+        sys.argv[0] == '--help'
+        or sys.argv[0] == '-h'
+    ):
+        help()
+        return
+
+    with open(str(WORK_DIR) + 'src' + sys.argv[0], 'rt') as f:
         html_src = HTML(f.read())
-    with open(str(WORK_DIR) + '/target/index.html', 'w') as f:
+    with open(str(WORK_DIR) + 'target' + sys.argv[0], 'w') as f:
         f.write(html_src.write())
+
+def help() -> None:
+    print('Usage: python balloon.py [OPTIONS] <SOURCE>')
+    print()
+    print('Note: balloon implicitly assumes that <SOURCE> is in src/, and should inflate into target/')
+    print()
+    print()
+    print('Options:')
+    print('-h, --help       Print help')
 
 if __name__ == '__main__':
     main()
