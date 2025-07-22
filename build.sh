@@ -58,8 +58,7 @@ do
 
             cp -R src/$item target/$item
         done
-    elif [ "$x" == '-h' -o "$x" == '--help' ]
-    then
+    else
         echo -e "$green"Usage:"$cyan" build.sh [OPTIONS] [COMMAND]
         echo
         echo -e "$green"Options:"$cyan"
