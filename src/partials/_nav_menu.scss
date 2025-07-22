@@ -18,22 +18,26 @@
         border-color: var(--accent-pink);
         margin: 0 var(--spacing-horizontal);
     }
+}
 
-    .nav_body {
-        background-color: var(--background-2);
-        border-radius: var(--border-radius-small);
-        transition: var(--transition-fade);
-    }
+.nav_body {
+    /* Need to force inheritence, otherwise <a> would require overrides for all color states from base styling for element. */
+    color: inherit;
+    text-decoration: none;
 
-    .nav_dropdown:hover .nav_body,
-    .nav_body:hover {
-        transform: var(--transform-scale-x);
+    background-color: var(--background-2);
+    border-radius: var(--border-radius-small);
+    transition: var(--transition-fade);
+}
+
+.nav_body:hover,
+.nav_dropdown:hover .nav_body {
+    transform: var(--transform-scale-x);
+    transition: var(--transition-cut);
+
+    .nav_title,
+    ion-icon {
+        color: var(--highlight-hover);
         transition: var(--transition-cut);
-
-        .nav_title,
-        ion-icon {
-            color: var(--highlight-hover);
-            transition: var(--transition-cut);
-        }
     }
 }

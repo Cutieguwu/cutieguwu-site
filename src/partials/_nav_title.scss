@@ -1,14 +1,16 @@
 .nav_title {
     /* Need to force inheritence, otherwise <a> would require overrides for all color states from base styling for element. */
     color: inherit;
+    text-decoration: inherit;
 
-    text-decoration: none;
     font-family: var(--font-family-generic);
     font-weight: bold;
     white-space: nowrap;
-    margin: 0 var(--spacing-horizontal);
+    margin: inherit;
+    padding: 0 var(--spacing-horizontal);
     transition: var(--transition-fade);
     text-transform: uppercase;
+    display: block;
 }
 
 .nav_title:hover {
