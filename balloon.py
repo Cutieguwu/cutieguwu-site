@@ -13,7 +13,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from _typeshed import StrPath
 
-WORK_DIR: StrPath = os.getcwd()
+WORK_DIR: StrPath = os.getcwd() + '/'
 
 @dataclass
 class Tag:
@@ -104,16 +104,24 @@ def main() -> None:
     #   Incorrect number of arguments
     #   Long help flag
     #   Short help flag
-    if len(sys.argv) != 1 or (
+    if len(sys.argv) != 2 or (
         sys.argv[0] == '--help'
         or sys.argv[0] == '-h'
     ):
         help()
         return
 
-    with open(str(WORK_DIR) + 'src' + sys.argv[0], 'rt') as f:
+    file_name = sys.argv[1].removeprefix('src/')
+
+    with open(str(WORK_DIR) + 'src/' + file_name, 'rt') as f:
         html_src = HTML(f.read())
-    with open(str(WORK_DIR) + 'target' + sys.argv[0], 'w') as f:
+
+    try:
+        os.makedirs(str(WORK_DIR) + 'target/' + os.path.dirname(file_name))
+    except FileExistsError:
+        pass
+
+    with open(str(WORK_DIR) + 'target/' + file_name, 'w') as f:
         f.write(html_src.write())
 
 def help() -> None:
