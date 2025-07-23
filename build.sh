@@ -38,9 +38,16 @@ do
     then
         echo -e "$green"Styling...
 
-        sass src/style.scss target/style.css
+        files=(
+            'style'
+            'errors/style'
+        )
 
-        echo -e "$cyan"'  src/style.scss -> target/style.css'
+        for stylesheet in "${files[@]}"
+        do
+            echo -e "$cyan  src/$stylesheet.scss -> target/$stylesheet.css"
+            sass src/$stylesheet.scss target/$stylesheet.css
+        done
 
     elif [ "$x" == 'copy' ]
     then

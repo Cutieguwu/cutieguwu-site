@@ -1,0 +1,113 @@
+@use "pane_main";
+@use "pane_nav";
+@use "pane_spacer";
+
+:root {
+    /*
+    0: Base of an element. Example: the viewport class.
+
+    The higher the integer, the lighter the colour, the higher it should be visually, meaning more nested in the cascade.
+
+    Odd numbers should be used as intermediate colours between the fore and back elements. Excepting white--white's special.
+    Eg. Current dropdown menu.
+
+    */
+    font-size: var(--font-size-generic);
+
+    --accent-red: #cb4c4cff;
+    --accent-orange: #e18142ff;
+    --accent-yellow: #e4d281ff;
+    --accent-green: #c5e689ff;
+    --accent-cyan: #a7edefff;
+    --accent-blue: #5f62e2ff;
+    --accent-indigo: #874ac0ff;
+    --accent-purple: #a355d3ff;
+    --accent-magenta: #df67dfff;
+    --accent-pink: #ff9f9fff;
+
+    --background-0: #130b21ff;
+    --background-1: #170d28ff;
+    --background-2: #231833ff;
+    --background-3: #211635ff;
+    --background-4: #2a223eff;
+
+    --block-0: #0d0d0dff;
+    --block-1: #1a1a1aff;
+    --block-2: #272727ff;
+
+    --highlight-hover: #944db6ff;
+
+    --white-0: #bfbfbfff;
+    --white-1: #d9d9d9ff;
+    --white-2: #e5e5e5ff;
+    --white-3: #f5f5f5ff;
+
+    --font-size-generic: 1.85vh;
+    --font-family-generic: "Liberation Sans", Arial, Sans-Serif;
+
+    --border-radius-small: calc(var(--border-radius-large) / 2);
+    --border-radius-large: 1rem;
+    --border-radius-leaf: var(--border-radius-small)
+        var(--border-radius-large);
+
+    --margin-pane: 1.5rem;
+
+    --spacing-horizontal: 0.75rem;
+    --spacing-menu-gap: 1rem;
+
+    --transition-fade: 0.4s ease-out;
+    --transition-cut: none;
+
+    --transform-scale-x: scaleX(1.15);
+
+    body {
+        background-color: var(--background-0);
+        margin: 0;
+        color: var(--white-3);
+    }
+}
+
+/*
+* {
+    outline: 1px solid red;
+}
+*/
+
+h1 {
+    font-size: 3.3vh;
+}
+
+h2 {
+    font-size: 2.5vh;
+}
+
+p {
+    font-family: var(--font-family-generic);
+}
+
+ion-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.viewport {
+    /* Adds a margin otherwise for some reason. */
+    margin: inherit;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.footer {
+    margin: 0;
+    padding: var(--spacing-horizontal);
+
+    background-color: var(--background-2);
+    border-top-right-radius: var(--border-radius-large);
+
+    font-size: 1.65vh;
+
+    position: absolute;
+    bottom: 0;
+}
