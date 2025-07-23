@@ -1,6 +1,10 @@
 .pane_error {
     width: max-content;
-    margin: auto; /* center object */
+
     text-align: center;
     background-color: var(--background-2);
+    margin: auto; /* center object */
+    padding: var(--spacing-horizontal);
+
+    border-radius: var(--border-radius-leaf);
 }
