@@ -6,13 +6,6 @@
         var(--item-edge-length) + calc(var(--item-padding) * 2)
     );
 
-    /*
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    margin-right: auto;
-    */
-
     display: grid;
     grid-template-columns:
         var(--item-size) var(--item-size) var(--item-size)
@@ -29,7 +22,11 @@
         width: var(--item-size);
         height: var(--item-size);
 
-        * {
+        ion-icon {
+            /*
+            To colour the icons, apply inline styling.
+            */
+
             width: var(--item-edge-length);
             height: var(--item-edge-length);
             padding: var(--item-padding);
@@ -37,22 +34,6 @@
             background-color: var(--background-2);
             border-radius: var(--border-radius-small)
                 var(--border-radius-large);
-        }
-
-        .icon_gitea {
-            color: var(--accent-green);
-        }
-
-        .icon_github {
-            color: var(--accent-blue);
-        }
-
-        .icon_license {
-            color: var(--accent-purple);
-        }
-
-        .icon_issues {
-            color: var(--accent-pink);
         }
     }
 }
