@@ -4,6 +4,13 @@
 
 @use "partials/pane_error";
 
+/*
+@font-face {
+    font-family: Syncopate;
+    src: url(syncopate.woff);
+}
+*/
+
 :root {
     /*
     0: Base of an element. Example: the viewport class.
@@ -44,18 +51,29 @@
     --white-2: #e5e5e5ff;
     --white-3: #f5f5f5ff;
 
-    --font-size-generic: 1.65vh;
-    --font-family-generic: Arial, Sans-Serif, Helvetica;
+    --font-size-generic: 1.85vh;
+    --font-family-generic: "Liberation Sans", Arial, Sans-Serif;
+
+    --border-radius-small: calc(var(--border-radius-large) / 2);
+    --border-radius-large: 1rem;
+    --border-radius-leaf: var(--border-radius-small)
+        var(--border-radius-large);
+
+    --margin-pane: 1.5rem;
+
+    --spacing-horizontal: 0.75rem;
+    --spacing-menu-gap: 1rem;
 
     --transition-fade: 0.4s ease-out;
     --transition-cut: none;
 
-    --border-radius-large: 1rem;
-    --border-radius-small: calc(var(--border-radius-large) / 2);
+    --transform-scale-x: scaleX(1.15);
 
-    --margin-pane: 1.5rem;
-
-    --spacing-menu-gap: 1rem;
+    body {
+        background-color: var(--background-0);
+        margin: 0;
+        color: var(--white-3);
+    }
 }
 
 /*
@@ -79,11 +97,20 @@ ion-icon {
 
 .viewport {
     /* Adds a margin otherwise for some reason. */
-    margin: 0;
+    margin: inherit;
 
-    background-color: var(--background-0);
-    color: var(--white-3);
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
+}
+
+.footer {
+    margin: 0;
+    padding: var(--spacing-horizontal);
+
+    background-color: var(--background-2);
+    border-top-right-radius: var(--border-radius-large);
+
+    position: absolute;
+    bottom: 0;
 }

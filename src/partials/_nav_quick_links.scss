@@ -1,7 +1,7 @@
 .nav_quick_links {
     --cols: 5;
-    --item-padding: 0.35rem;
-    --item-edge-length: 1.25rem;
+    --item-padding: 0.3rem;
+    --item-edge-length: 1.15rem;
     --item-size: calc(
         var(--item-edge-length) + calc(var(--item-padding) * 2)
     );
@@ -32,8 +32,7 @@
             padding: var(--item-padding);
 
             background-color: var(--background-2);
-            border-radius: var(--border-radius-small)
-                var(--border-radius-large);
+            border-radius: var(--border-radius-leaf);
         }
     }
 }

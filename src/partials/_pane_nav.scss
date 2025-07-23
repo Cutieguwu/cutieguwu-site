@@ -4,14 +4,15 @@
 @use "nav_quick_links";
 
 .pane_nav {
-    --spacing-horizontal: 0.75rem;
-    --transform-scale-x: scaleX(1.15);
-
     margin: var(--margin-pane);
     padding: 0;
     gap: var(--spacing-menu-gap);
     width: min-content;
     align-content: start;
+
     display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto auto auto 1fr max-content;
+
     color: var(--accent-pink);
 }
