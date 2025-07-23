@@ -29,7 +29,7 @@ do
 
         for html in "${files[@]}"
         do
-            echo -e "  $cyan$html -> target/"
+            echo -e "  $cyan$html"
 
             eval $python 'balloon.py' $html
         done
@@ -54,7 +54,7 @@ do
 
         for item in "${files[@]}"
         do
-            echo -e "$cyan  src/$item -> target/$item"
+            echo -e "$cyan  src/$item"
 
             cp -R src/$item target/$item
         done
