@@ -5,29 +5,32 @@
         <title>400 | Cutieguwu</title>
         <include src="includes/meta.html" />
     </head>
-    <body class="viewport">
-        <nav class="pane_nav">
-            <include src="includes/nav_logo.html" />
-            <include src="includes/nav_menu.html" />
-            <div class="location">
-                <p class="location_header">You are here:</p>
-                <p class="location_page">400</p>
+    <body>
+        <div class="viewport">
+            <nav class="pane_nav">
+                <include src="includes/nav_logo.html" />
+                <include src="includes/nav_menu.html" />
+                <div class="location">
+                    <h4 class="location_header">You are here:</h4>
+                    <h5 class="location_page">400</h5>
+                </div>
+                <include src="includes/nav_quick_links.html" />
+            </nav>
+            <div class="error_pane">
+                <h1>400</h1>
+                <h2>Bad Request!</h2>
+                <hr />
+                <p>
+                    The server cannot or will not process this request due to apparent client-side
+                    error or deception.
+                </p>
             </div>
-            <include src="includes/nav_quick_links.html" />
-        </nav>
-        <div class="error_pane">
-            <h1>400</h1>
-            <h2>Bad Request!</h2>
-            <hr />
-            <p>
-                The server cannot or will not process this request due to apparent client-side error
-                or deception.
-            </p>
+            <div class="pane_spacer">
+                <div class="spacer_container"><p>#AD</p></div>
+                <div class="spacer_container"><p>#AD</p></div>
+            </div>
         </div>
-        <div class="pane_spacer">
-            <div class="spacer_container"><p>#AD</p></div>
-            <div class="spacer_container"><p>#AD</p></div>
-        </div>
+        <include src="includes/footer.html" />
         <include src="includes/scripts.html" />
     </body>
 </html>

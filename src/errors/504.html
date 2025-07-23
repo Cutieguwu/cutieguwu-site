@@ -5,29 +5,32 @@
         <title>Error Template | Cutieguwu</title>
         <include src="includes/meta.html" />
     </head>
-    <body class="viewport">
-        <nav class="pane_nav">
-            <include src="includes/nav_logo.html" />
-            <include src="includes/nav_menu.html" />
-            <div class="location">
-                <p class="location_header">You are here:</p>
-                <p class="location_page">Error Template</p>
+    <body>
+        <div class="viewport">
+            <nav class="pane_nav">
+                <include src="includes/nav_logo.html" />
+                <include src="includes/nav_menu.html" />
+                <div class="location">
+                    <h4 class="location_header">You are here:</h4>
+                    <h5 class="location_page">Error Template</h5>
+                </div>
+                <include src="includes/nav_quick_links.html" />
+            </nav>
+            <div class="pane_error">
+                <h1>504</h1>
+                <h2>Gateway Timeout!</h2>
+                <hr />
+                <p>
+                    The server acted as a proxy and didn't receive a timely response from the
+                    upstream server.
+                </p>
             </div>
-            <include src="includes/nav_quick_links.html" />
-        </nav>
-        <div class="pane_error">
-            <h1>504</h1>
-            <h2>Gateway Timeout!</h2>
-            <hr />
-            <p>
-                The server acted as a proxy and didn't receive a timely response from the upstream
-                server.
-            </p>
+            <div class="pane_spacer">
+                <div class="spacer_container"><p>#AD</p></div>
+                <div class="spacer_container"><p>#AD</p></div>
+            </div>
         </div>
-        <div class="pane_spacer">
-            <div class="spacer_container"><p>#AD</p></div>
-            <div class="spacer_container"><p>#AD</p></div>
-        </div>
+        <include src="includes/footer.html" />
         <include src="includes/scripts.html" />
     </body>
 </html>
