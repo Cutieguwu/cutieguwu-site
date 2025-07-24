@@ -22,6 +22,8 @@
         width: var(--item-size);
         height: var(--item-size);
 
+        transition: var(--transition-fade);
+
         ion-icon {
             /*
             To colour the icons, apply inline styling.
@@ -34,5 +36,10 @@
             background-color: var(--background-2);
             border-radius: var(--border-radius-leaf);
         }
+    }
+
+    a:hover {
+        transition: var(--transition-cut);
+        transform: var(--transform-scale-x) var(--transform-scale-y);
     }
 }
