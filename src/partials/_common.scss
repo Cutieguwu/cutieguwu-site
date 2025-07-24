@@ -102,12 +102,14 @@ ion-icon {
 .footer {
     margin: 0;
     padding: var(--spacing-horizontal);
+    width: min-content;
 
     background-color: var(--background-2);
     border-top-right-radius: var(--border-radius-large);
 
     font-size: 1.65vh;
+    white-space: nowrap;
 
-    position: absolute;
+    position: sticky;
     bottom: 0;
 }
