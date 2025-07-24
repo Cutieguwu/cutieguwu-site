@@ -1,0 +1,39 @@
+.quick_links {
+    --item-padding: 0.35rem;
+    --item-size: calc(1rem + var(--item-padding));
+
+    display: flex;
+    justify-content: center;
+
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+        height: var(--item-size);
+
+        display: grid;
+
+        background-color: var(--background-1);
+        border-radius: var(--border-radius-leaf);
+
+        margin: 0.5rem;
+        padding: var(--item-padding);
+        gap: var(--item-padding);
+
+        align-items: center;
+        justify-content: center;
+
+        grid-auto-flow: column;
+
+        text-decoration: none;
+        color: var(--white-1);
+
+        /*
+        To colour the icons, apply inline styling.
+        */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

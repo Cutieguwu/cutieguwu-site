@@ -1,41 +1,32 @@
-.nav_quick_links {
-    --cols: 5;
-    --item-padding: 0.3rem;
-    --item-edge-length: 1.15rem;
-    --item-size: calc(
-        var(--item-edge-length) + calc(var(--item-padding) * 2)
-    );
+.pane_nav .quick_links {
+    --item-padding: 0.25rem;
 
-    display: grid;
-    grid-template-columns:
-        var(--item-size) var(--item-size) var(--item-size)
-        var(--item-size) var(--item-size);
-    align-items: center;
+    justify-content: space-between;
 
-    gap: var(--spacing-menu-gap)
-        calc(
-            calc(100% - calc(var(--item-size) * var(--cols))) /
-                calc(var(--cols) - 1)
-        );
+    /*
+    To colour the icons, apply inline styling.
+    */
 
     a {
         width: var(--item-size);
-        height: var(--item-size);
+        background-color: var(--background-2);
 
         transition: var(--transition-fade);
+        margin: 0;
+    }
 
-        ion-icon {
-            /*
-            To colour the icons, apply inline styling.
-            */
+    .phantom {
+        width: var(--item-size);
+        height: var(--item-size);
 
-            width: var(--item-edge-length);
-            height: var(--item-edge-length);
-            padding: var(--item-padding);
+        /*
+        Fake hiding the element.
 
-            background-color: var(--background-2);
-            border-radius: var(--border-radius-leaf);
-        }
+        Due to how flexboxes function, settings `display: none`
+        will result in the box just scaling as if the element
+        never existed.
+        */
+        background-color: inherit;
     }
 
     a:hover {
