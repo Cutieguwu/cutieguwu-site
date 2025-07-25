@@ -1,7 +1,9 @@
+@use "a_footer";
+@use "a_quick_links";
+
 @use "pane_main";
 @use "pane_nav";
 @use "pane_spacer";
-@use "a_quick_links";
 
 :root {
     /*
@@ -108,33 +110,4 @@ ion-icon {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-}
-
-.tailer {
-    margin: auto;
-    padding: var(--spacing-horizontal);
-    width: min-content;
-
-    background-color: var(--background-2);
-    border-radius: var(--border-radius-leaf);
-
-    font-size: 1.65vh;
-    white-space: nowrap;
-
-    align-self: center;
-}
-
-.footer {
-    margin: 0;
-    padding: var(--spacing-horizontal);
-    width: min-content;
-
-    background-color: var(--background-2);
-    border-top-right-radius: var(--border-radius-large);
-
-    font-size: 1.65vh;
-    white-space: nowrap;
-
-    position: fixed;
-    bottom: 0;
 }

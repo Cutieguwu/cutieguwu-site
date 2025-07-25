@@ -1,10 +1,19 @@
+@use "a_tailer";
+
 .pane_main {
     flex: 1;
+    flex-direction: column;
 
-    text-align: center;
-    background-color: var(--background-2);
     margin: var(--margin-pane);
-    padding: var(--spacing-horizontal);
 
-    border-radius: var(--border-radius-leaf);
+    justify-content: center;
+
+    .main_body,
+    .tailer {
+        background-color: var(--background-2);
+        border-radius: var(--border-radius-leaf);
+        padding: var(--spacing-horizontal);
+
+        text-align: center;
+    }
 }
