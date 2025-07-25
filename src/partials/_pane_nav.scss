@@ -6,13 +6,19 @@
 .pane_nav {
     margin: var(--margin-pane);
     padding: 0;
-    gap: var(--spacing-menu-gap);
+
     width: min-content;
-    align-content: start;
 
     display: grid;
     grid-auto-flow: row;
     grid-template-rows: auto auto auto 1fr max-content;
+    gap: var(--spacing-menu-gap);
+    align-content: start;
+
+    position: sticky;
+    top: var(--margin-pane);
+    bottom: var(--margin-pane);
+    right: 0;
 
     color: var(--accent-pink);
 }

@@ -1,10 +1,17 @@
 .pane_spacer {
     margin: var(--margin-pane);
     padding: 0;
+
     width: 10vw;
+
     display: grid;
     grid-auto-flow: row;
     gap: var(--spacing-menu-gap);
+
+    position: sticky;
+    top: var(--margin-pane);
+    bottom: var(--margin-pane);
+    right: 0;
 
     .spacer_container {
         margin: 0;

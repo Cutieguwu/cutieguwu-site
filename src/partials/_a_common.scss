@@ -110,6 +110,20 @@ ion-icon {
     align-items: flex-start;
 }
 
+.tailer {
+    margin: auto;
+    padding: var(--spacing-horizontal);
+    width: min-content;
+
+    background-color: var(--background-2);
+    border-radius: var(--border-radius-leaf);
+
+    font-size: 1.65vh;
+    white-space: nowrap;
+
+    align-self: center;
+}
+
 .footer {
     margin: 0;
     padding: var(--spacing-horizontal);
