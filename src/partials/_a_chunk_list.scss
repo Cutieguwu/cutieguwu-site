@@ -1,0 +1,65 @@
+.chunk_list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: left;
+
+    .chunk,
+    hr {
+        margin: var(--spacing-horizontal);
+    }
+
+    .chunk {
+        .header {
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: 1fr min-content;
+
+            background-color: var(--background-3);
+            border-radius: var(--border-radius-leaf);
+
+            padding: var(--spacing-horizontal);
+
+            .name,
+            .subtitle,
+            .status {
+                margin: 0;
+            }
+
+            .name {
+                white-space: nowrap;
+            }
+
+            .subtitle {
+                display: inline-block;
+
+                font-size: 0.85rem;
+                font-weight: normal;
+                font-style: italic;
+                font-family: var(--font-family-generic);
+            }
+
+            .status {
+                align-self: center;
+                white-space: nowrap;
+                margin-left: var(--spacing-horizontal);
+
+                text-decoration: none;
+                font-size: 1.17rem;
+                font-weight: bold;
+            }
+        }
+
+        .body {
+            padding: 0 calc(var(--spacing-horizontal) * 2);
+
+            ul {
+                font-family: var(--font-family-generic);
+
+                li + li {
+                    margin-top: 0.5em;
+                }
+            }
+        }
+    }
+}

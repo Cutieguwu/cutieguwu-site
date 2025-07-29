@@ -1,0 +1,173 @@
+.work_history {
+    max-width: 45%;
+
+    .chunk_list {
+        flex-direction: column-reverse;
+    }
+}
+
+.early_history {
+    align-self: center;
+}
+
+.education {
+    max-width: 45%;
+
+    .chunk_list {
+        flex-direction: column-reverse;
+    }
+}
+
+.awards {
+    max-width: 45%;
+}
+
+.certifications {
+    max-width: 45%;
+}
+
+.software {
+    max-width: 60%;
+
+    .premiere_pro {
+        color: var(--accent-purple);
+    }
+
+    .photoshop {
+        color: var(--accent-blue);
+    }
+
+    .anubis {
+        color: var(--accent-green);
+    }
+
+    .blender {
+        color: var(--accent-orange);
+    }
+
+    .davinci_resolve {
+        color: var(--accent-blue);
+    }
+
+    .gimp {
+        color: var(--accent-magenta);
+    }
+
+    .git {
+        color: var(--accent-orange);
+    }
+
+    .libreoffice {
+        color: var(--white-0);
+    }
+
+    .linux {
+        color: var(--white-0);
+    }
+
+    .ms_office {
+        color: var(--accent-orange);
+    }
+
+    .ms_windows {
+        color: var(--accent-blue);
+    }
+
+    .musescore {
+        color: var(--accent-cyan);
+    }
+
+    .nextcloud {
+        color: var(--accent-cyan);
+    }
+
+    .nginx {
+        color: var(--accent-green);
+    }
+
+    .obs {
+        color: var(--white-0);
+    }
+
+    .prusaslicer {
+        color: var(--accent-orange);
+    }
+
+    .shopbot_control_software {
+        color: var(--accent-blue);
+    }
+
+    .vectric_aspire {
+        color: var(--accent-red);
+        rotate: 90deg;
+    }
+
+    .zotero {
+        color: var(--accent-orange);
+    }
+}
+
+.prog_languages {
+    max-width: 30%;
+
+    .asciidoc {
+        color: var(--accent-cyan);
+    }
+
+    .css {
+        color: var(--accent-purple);
+    }
+
+    .html {
+        color: var(--accent-orange);
+    }
+
+    .json {
+        color: var(--accent-cyan);
+    }
+
+    .markdown {
+        color: var(--accent-indigo);
+    }
+
+    .nginx {
+        color: var(--accent-green);
+    }
+
+    .python {
+        color: var(--accent-blue);
+    }
+
+    .ron {
+        color: var(--accent-orange);
+    }
+
+    .rust {
+        color: var(--accent-orange);
+    }
+
+    .scss {
+        color: var(--accent-magenta);
+    }
+
+    .toml {
+        color: var(--accent-orange);
+    }
+
+    .shell {
+        color: var(--accent-green);
+    }
+
+    .yaml {
+        color: var(--accent-yellow);
+    }
+}
+
+.docker {
+    /*
+    Docker is protective of their colours.
+    https://www.docker.com/company/newsroom/media-resources/
+    */
+
+    color: #1d63edff;
+}
