@@ -4,4 +4,10 @@
 
     font-size: 1.65vh;
     white-space: nowrap;
+
+    background-color: var(--background-2);
+    border-radius: var(--border-radius-leaf);
+    padding: var(--spacing-horizontal);
+
+    text-align: center;
 }

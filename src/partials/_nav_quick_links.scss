@@ -15,6 +15,11 @@
         margin: 0;
     }
 
+    a:hover {
+        transition: var(--transition-cut);
+        transform: var(--transform-scale-x) var(--transform-scale-y);
+    }
+
     .phantom {
         width: var(--item-size);
         height: var(--item-size);
@@ -25,12 +30,32 @@
         Due to how flexboxes function, settings `display: none`
         will result in the box just scaling as if the element
         never existed.
+
+        phantom needs to sit beside a element in hierarchy, otherwise
+        phantom will inherit from a like this:
+
+        .pane_nav > .quick_links > a > .phantom
         */
         background-color: inherit;
     }
+}
 
-    a:hover {
-        transition: var(--transition-cut);
-        transform: var(--transform-scale-x) var(--transform-scale-y);
-    }
+.gitea {
+    color: var(--accent-green);
+}
+
+.github {
+    color: var(--accent-blue);
+}
+
+.license {
+    color: var(--accent-indigo);
+}
+
+.issue_tracker {
+    color: var(--accent-magenta);
+}
+
+.rss {
+    color: var(--accent-orange);
 }

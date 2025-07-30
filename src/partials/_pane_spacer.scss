@@ -2,7 +2,7 @@
     margin: var(--margin-pane);
     padding: 0;
 
-    width: 10vw;
+    width: min-content;
 
     display: grid;
     grid-auto-flow: row;
@@ -22,11 +22,10 @@
                     var(--spacing-menu-gap) / 2
                 ) - calc(var(--spacing-horizontal) * 2)
         );
-        flex: 1;
         border-radius: var(--border-radius-leaf);
 
-        /* Vertical Text Align */
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
 

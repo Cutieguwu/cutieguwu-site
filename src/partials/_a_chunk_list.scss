@@ -42,7 +42,7 @@
             .status {
                 align-self: center;
                 white-space: nowrap;
-                margin-left: var(--spacing-horizontal);
+                margin-left: calc(var(--spacing-horizontal) * 2);
 
                 text-decoration: none;
                 font-size: 1.17rem;

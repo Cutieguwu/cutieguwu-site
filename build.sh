@@ -26,6 +26,7 @@ do
 
         files=(`ls src/*.html`)
         files+=(`ls src/errors/*.html`)
+        files+=(`ls src/blog/*.html`)
 
         for html in "${files[@]}"
         do
@@ -41,6 +42,7 @@ do
         files=(
             'style'
             'errors/style'
+            'blog/style'
         )
 
         for stylesheet in "${files[@]}"

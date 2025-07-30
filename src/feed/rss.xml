@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+    <title>Cutieguwu Yaps</title>
+    <link>https://www.cutieguwu.ca/</link>
+    <description
+        >Cutieguwu's blog where she discusses various things.</description>
+    <language>en-ca</language>
+    <category>Technology/IT/Life/Mental Health/Health</category>
+    <item>
+        <title>Splitting Pathways</title>
+        <link>https://blog.cutieguwu.ca/0_divergent_pathways.html</link>
+        <description>Discussing my struggles in love.</description>
+        <category>Life</category>
+        <category>Mental Health</category>
+        <category>Health</category>
+    </item>
+</channel>
+
+</rss>
