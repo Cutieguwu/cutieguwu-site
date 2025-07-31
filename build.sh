@@ -18,6 +18,8 @@ else
     args='inflate style copy'
 fi
 
+mkdir -p target/.well-known
+
 for x in $args
 do
     if [ "$x" == 'inflate' ]
