@@ -65,7 +65,7 @@ do
         do
             echo -e "$cyan  src/$item"
 
-            cp -R src/$item target/$item
+            cp -Ru src/$item target/$item
         done
     else
         echo -e "$green"Usage:"$cyan" build.sh [OPTIONS] [COMMAND]
