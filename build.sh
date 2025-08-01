@@ -26,7 +26,7 @@ for x in $args
 do
     cmd=''
 
-    files=''
+    files=()
 
     src_ext=''
     target_ext=''
@@ -47,7 +47,9 @@ do
     then
         cmd='sass'
 
-        files=(`ls src/**/style.scss`)
+        files='src/style.scss'
+        files+=(`ls src/**/style.scss`)
+        files+=(`ls src/**/**/style.scss`)
 
         src_ext='.scss'
         target_ext='.css'
