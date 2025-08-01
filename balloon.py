@@ -104,30 +104,27 @@ def main() -> None:
     #   Incorrect number of arguments
     #   Long help flag
     #   Short help flag
-    if len(sys.argv) != 2 or (
+    if len(sys.argv) != 3 or (
         sys.argv[0] == '--help'
         or sys.argv[0] == '-h'
     ):
         help()
         return
 
-    file_name = sys.argv[1].removeprefix('src/')
-
-    with open(str(WORK_DIR) + 'src/' + file_name, 'rt') as f:
+    with open(str(WORK_DIR) + sys.argv[1], 'rt') as f:
         html_src = HTML(f.read())
 
+    # Patch to make sure that target paths are available.
     try:
-        os.makedirs(str(WORK_DIR) + 'target/' + os.path.dirname(file_name))
+        os.makedirs(str(WORK_DIR) + os.path.dirname(sys.argv[2]))
     except FileExistsError:
         pass
 
-    with open(str(WORK_DIR) + 'target/' + file_name, 'w') as f:
+    with open(str(WORK_DIR) + sys.argv[2], 'w') as f:
         f.write(html_src.write())
 
 def help() -> None:
-    print('Usage: python balloon.py [OPTIONS] <SOURCE>')
-    print()
-    print('Note: balloon implicitly assumes that <SOURCE> is in src/, and should inflate into target/')
+    print('Usage: python balloon.py [OPTIONS] <SOURCE> <DESTINATION>')
     print()
     print()
     print('Options:')

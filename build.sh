@@ -1,11 +1,12 @@
-#! /usr/bin/bash
+#!/usr/bin/bash
 #
 # I'm new to bash scripting, so give me a break.
 # I know that this is probably crap, but it's cheap, dirty, and does the job.
 
-python=~/.pyenv/versions/3.12.9/bin/python
 green='\e[32m'
 cyan='\e[36m'
+
+src_prefix='src/'
 
 # The "a" is just to make this work if no characters are present in $@
 args=$@
@@ -18,57 +19,54 @@ else
     args='inflate style copy'
 fi
 
+# Cheap patch for copying in case the paths aren't present.
 mkdir -p target/.well-known
 
 for x in $args
 do
+    cmd=''
+
+    files=''
+
+    src_ext=''
+    target_ext=''
+
     if [ "$x" == 'inflate' ]
     then
-        echo -e "$green"Inflating...
+        cmd='~/.pyenv/versions/3.12.9/bin/python balloon.py'
 
         files=(`ls src/*.html`)
+        # Because bash won't let **/ find files without another nested dir.
+        files+=(`ls src/blog/*.html`) # This wouldn't be needed under zsh.
+        files+=(`ls src/blog/**/*.html`)
         files+=(`ls src/errors/*.html`)
-        files+=(`ls src/blog/*.html`)
 
-        for html in "${files[@]}"
-        do
-            echo -e "  $cyan$html"
-
-            eval $python 'balloon.py' $html
-        done
+        action=Inflating...
 
     elif [ "$x" == 'style' ]
     then
-        echo -e "$green"Styling...
+        cmd='sass'
 
-        files=(
-            'style'
-            'errors/style'
-            'blog/style'
-        )
+        files=(`ls src/**/style.scss`)
 
-        for stylesheet in "${files[@]}"
-        do
-            echo -e "$cyan  src/$stylesheet.scss -> target/$stylesheet.css"
-            sass src/$stylesheet.scss target/$stylesheet.css
-        done
+        src_ext='.scss'
+        target_ext='.css'
+
+        action=Styling...
 
     elif [ "$x" == 'copy' ]
     then
-        echo -e "$green"Copying...
+        cmd='cp -Ru'
 
         files=(
-            '.well-known/security.txt'
-            'img'
-            'robots.txt'
+            'src/.well-known/'
+            'src/feed/'
+            'src/img/'
+            'src/robots.txt'
         )
 
-        for item in "${files[@]}"
-        do
-            echo -e "$cyan  src/$item"
+        action=Copying...
 
-            cp -Ru src/$item target/$item
-        done
     else
         echo -e "$green"Usage:"$cyan" build.sh [OPTIONS] [COMMAND]
         echo
@@ -79,5 +77,20 @@ do
         echo '  inflate             Inflate the HTML source'
         echo '  style               Compile SCSS to CSS'
         echo '  copy                Copy assets to target'
+
+        break
     fi
+
+    echo -e "$green$action"
+
+    for src in "${files[@]}"
+    do
+        target="${src//$src_prefix}"
+        target="${target//$src_ext}"
+        target="target/$target$target_ext"
+
+        echo -e "$cyan  $src -> $target"
+
+        eval "$cmd $src $target"
+    done
 done
