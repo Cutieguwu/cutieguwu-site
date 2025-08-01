@@ -20,7 +20,7 @@ else
 fi
 
 # Cheap patch for copying in case the paths aren't present.
-mkdir -p target/.well-known
+mkdir -p target
 
 for x in $args
 do
@@ -58,14 +58,18 @@ do
 
     elif [ "$x" == 'copy' ]
     then
-        cmd='cp -Ru'
+        cmd='cp -R'
 
         files=(
-            'src/.well-known/'
-            'src/feed/'
-            'src/img/'
+            'src/.well-known/security.txt'
+            'src/feed/rss.xml'
             'src/robots.txt'
         )
+        files+=(`ls src/img/`)
+
+        mkdir -p target/.well-known
+        mkdir -p target/feed
+        mkdir -p target/img
 
         action=Copying...
 
