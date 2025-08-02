@@ -1,33 +1,23 @@
-.work_history {
-    max-width: 45%;
-
-    .chunk_list {
-        flex-direction: column-reverse;
-    }
-}
-
 .early_history {
     align-self: center;
 }
 
+.work_history,
 .education {
-    max-width: 45%;
-
     .chunk_list {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
     }
 }
 
-.awards {
-    max-width: 45%;
-}
-
-.certifications {
-    max-width: 45%;
+.awards,
+.certifications,
+.education,
+.work_history {
+    max-width: 44%;
 }
 
 .software {
-    max-width: 60%;
+    max-width: 55%;
 
     .premiere_pro {
         color: var(--accent-purple);

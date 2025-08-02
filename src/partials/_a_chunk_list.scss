@@ -1,12 +1,12 @@
-.chunk_list {
+.chunk_list,
+.pane_main .main_body .chunk_list {
     display: flex;
     flex-direction: column;
     padding: 0;
     text-align: left;
 
-    .chunk,
-    hr {
-        margin: var(--spacing-horizontal);
+    .chunk + .chunk {
+        margin-top: var(--spacing-horizontal);
     }
 
     .chunk {
@@ -20,10 +20,16 @@
 
             padding: var(--spacing-horizontal);
 
+            text-align: start;
+
+            width: calc(100% - calc(var(--spacing-horizontal) * 2));
+
+            margin: 0;
+
             .name,
             .subtitle,
             .status {
-                margin: 0;
+                margin: inherit;
             }
 
             .name {

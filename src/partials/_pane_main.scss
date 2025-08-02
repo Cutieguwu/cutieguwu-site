@@ -13,6 +13,37 @@
         border-radius: var(--border-radius-leaf);
         padding: var(--spacing-horizontal);
 
-        text-align: center;
+        .header {
+            text-align: center;
+            padding: var(--spacing-horizontal);
+            width: min-content;
+
+            white-space: nowrap;
+
+            margin: 0 auto;
+
+            .title {
+                background-color: var(--background-1);
+                border-radius: var(--border-radius-leaf);
+                padding: var(--spacing-horizontal);
+            }
+
+            .date {
+                display: block;
+
+                font-size: 0.85rem;
+                font-weight: normal;
+                font-style: italic;
+                font-family: var(--font-family-generic);
+            }
+        }
+
+        .body {
+            text-align: start;
+
+            p {
+                color: var(--white-1);
+            }
+        }
     }
 }
