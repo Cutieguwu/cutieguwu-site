@@ -75,6 +75,14 @@ do
 
         action=Copying...
 
+    elif [ "$x" == 'clean' ]
+    then
+        echo -e "$green"Cleaning...
+
+        rm -R target
+
+        break
+
     else
         echo -e "$green"Usage:"$cyan" build.sh [OPTIONS] [COMMAND]
         echo
@@ -85,6 +93,7 @@ do
         echo '  inflate             Inflate the HTML source'
         echo '  style               Compile SCSS to CSS'
         echo '  copy                Copy assets to target'
+        echo '  clean               Wipe the target dir'
 
         break
     fi
@@ -102,3 +111,5 @@ do
         eval "$cmd $src $target"
     done
 done
+
+echo -e "$green"Done.
