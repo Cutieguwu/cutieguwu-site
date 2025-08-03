@@ -40,6 +40,8 @@ do
         files+=(`ls src/blog/*.html`) # This wouldn't be needed under zsh.
         files+=(`ls src/blog/**/*.html`)
         files+=(`ls src/errors/*.html`)
+        files+=(`ls src/minecraft/*.html`)
+        files+=(`ls src/minecraft/**/*.html`)
 
         action=Inflating...
 
