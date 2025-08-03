@@ -49,7 +49,7 @@ class Tag:
         return param_value
 
     def write(self) -> str:
-        return f'<{self.value}>{self.trail if self.trail != None else ''}'
+        return f'<{self.value}>{self.trail if self.trail != None else ""}'
 
 @dataclass
 class HTML:
