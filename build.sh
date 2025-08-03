@@ -33,7 +33,7 @@ do
 
     if [ "$x" == 'inflate' ]
     then
-        cmd='~/.pyenv/versions/3.12.9/bin/python balloon.py'
+        cmd='python balloon.py'
 
         files=(`ls src/*.html`)
         # Because bash won't let **/ find files without another nested dir.
