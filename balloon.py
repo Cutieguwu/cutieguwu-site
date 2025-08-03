@@ -3,9 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from types import NoneType
 from typing import Optional
-from icecream.icecream import print_function
 from result import Result, Ok, Err
-from icecream import ic
 import os
 import sys
 
