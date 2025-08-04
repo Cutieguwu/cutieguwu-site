@@ -8,11 +8,14 @@
     */
 
     a {
-        width: var(--item-size);
         background-color: var(--background-2);
 
         transition: var(--transition-fade);
         margin: 0;
+
+        ion-icon {
+            width: var(--item-size);
+        }
     }
 
     a:hover {
@@ -21,8 +24,7 @@
     }
 
     .phantom {
-        width: var(--item-size);
-        height: var(--item-size);
+        width: calc(var(--item-size) + calc(var(--item-padding) * 2));
 
         /*
         Fake hiding the element.

@@ -15,6 +15,8 @@
             grid-auto-flow: row;
             grid-template-columns: 1fr min-content;
 
+            column-gap: calc(var(--spacing-horizontal) * 2);
+
             background-color: var(--background-3);
             border-radius: var(--border-radius-leaf);
 
@@ -22,7 +24,8 @@
 
             text-align: start;
 
-            width: calc(100% - calc(var(--spacing-horizontal) * 2));
+            /*width: calc(100% - calc(var(--spacing-horizontal) * 2));*/
+            width: 100%;
 
             margin: 0;
 
@@ -48,7 +51,6 @@
             .status {
                 align-self: center;
                 white-space: nowrap;
-                margin-left: calc(var(--spacing-horizontal) * 2);
 
                 text-decoration: none;
                 font-size: 1.17rem;

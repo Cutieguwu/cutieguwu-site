@@ -7,14 +7,11 @@
     justify-content: center;
 
     a {
-        height: var(--item-size);
-
         display: grid;
 
         background-color: var(--background-3);
         border-radius: var(--border-radius-leaf);
 
-        margin: 0.5rem;
         padding: var(--item-padding);
         gap: var(--item-padding);
 
@@ -26,9 +23,6 @@
         text-decoration: none;
         color: var(--white-1);
 
-        /*
-        To colour the icons, apply inline styling.
-        */
         * {
             margin: 0;
             padding: 0;

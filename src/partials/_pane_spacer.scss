@@ -1,27 +1,23 @@
 .pane_spacer {
-    margin: var(--margin-pane);
-    padding: 0;
+    margin: 0;
+    padding: var(--margin-pane);
 
     width: min-content;
+    height: 100vh;
 
     display: grid;
     grid-auto-flow: row;
     gap: var(--spacing-menu-gap);
 
     position: sticky;
-    top: var(--margin-pane);
-    bottom: var(--margin-pane);
+    top: 0;
     right: 0;
 
     .spacer_container {
         margin: 0;
         padding: var(--spacing-horizontal);
         background-color: var(--background-2);
-        height: calc(
-            50vh - var(--margin-pane) - calc(
-                    var(--spacing-menu-gap) / 2
-                ) - calc(var(--spacing-horizontal) * 2)
-        );
+        height: 100%;
         border-radius: var(--border-radius-leaf);
 
         display: flex;
