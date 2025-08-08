@@ -1,16 +1,22 @@
-.chunk_list,
-.pane_main .main_body .chunk_list {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    text-align: left;
+/*
+All specificities to do with Chunk Lists are a disaster.
+
+Hopefully, I will attempt to clean up this steaming pile of shit so that I don't have to deal with conflicts (.main_body .body vs. .chunk .body in particular), but we'll see.
+*/
+
+.chunk_list {
+    display: grid;
+
+    width: 100%;
 
     .chunk + .chunk {
         margin-top: var(--spacing-horizontal);
     }
 
     .chunk {
-        .header {
+        width: inherit;
+
+        > .header {
             display: grid;
             grid-auto-flow: row;
             grid-template-columns: 1fr min-content;
@@ -24,19 +30,12 @@
 
             text-align: start;
 
-            /*width: calc(100% - calc(var(--spacing-horizontal) * 2));*/
-            width: 100%;
-
-            margin: 0;
+            width: inherit;
 
             .name,
             .subtitle,
             .status {
                 margin: inherit;
-            }
-
-            .name {
-                white-space: nowrap;
             }
 
             .subtitle {
@@ -58,7 +57,7 @@
             }
         }
 
-        .body {
+        > .body {
             padding: 0 calc(var(--spacing-horizontal) * 2);
 
             ul {
@@ -68,6 +67,19 @@
                     margin-top: 0.5em;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .chunk_list .chunk {
+        > .header {
+            column-gap: var(--spacing-horizontal);
+        }
+
+        > .body {
+            /* Collapse the L/R padding to maximize usable space */
+            padding: 0;
         }
     }
 }

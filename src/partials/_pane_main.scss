@@ -1,24 +1,17 @@
 @use "a_tailer";
 
 .pane_main {
-    flex: 1;
-    flex-direction: column;
-
     margin: var(--margin-pane);
 
-    justify-content: center;
-
-    .main_body {
+    > .body {
         background-color: var(--background-2);
         border-radius: var(--border-radius-leaf);
         padding: var(--spacing-horizontal);
 
-        .header {
+        > .header {
             text-align: center;
             padding: var(--spacing-horizontal);
-            width: min-content;
-
-            white-space: nowrap;
+            width: max-content;
 
             margin: 0 auto;
 
@@ -38,12 +31,18 @@
             }
         }
 
-        .body {
+        > .body {
             text-align: start;
 
             p {
                 color: var(--white-1);
             }
         }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .pane_main {
+        width: 100%;
     }
 }

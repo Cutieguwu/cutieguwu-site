@@ -5,20 +5,25 @@
 
 .pane_nav {
     margin: var(--margin-pane);
-    padding: 0;
 
     width: min-content;
+    height: min-content;
 
     display: grid;
     grid-auto-flow: row;
-    grid-template-rows: auto auto auto 1fr max-content;
+    grid-template-rows: repeat(4, min-content);
     gap: var(--spacing-menu-gap);
     align-content: start;
 
     position: sticky;
     top: var(--margin-pane);
-    bottom: var(--margin-pane);
-    left: 0;
+    left: var(--margin-pane);
 
     color: var(--accent-pink);
+}
+
+@media only screen and (max-width: 500px) {
+    .pane_nav {
+        width: 75%;
+    }
 }

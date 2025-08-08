@@ -20,8 +20,10 @@
     }
 }
 
-.nav_body {
-    /* Need to force inheritence, otherwise <a> would require overrides for all color states from base styling for element. */
+.nav_item {
+    /*
+    Need to force inheritence, otherwise <a> would require overrides for all color states from base styling for element.
+    */
     color: inherit;
     text-decoration: none;
 
@@ -30,8 +32,8 @@
     transition: var(--transition-fade);
 }
 
-.nav_body:hover,
-.nav_dropdown:hover .nav_body {
+.nav_item:hover,
+.nav_dropdown:hover .nav_item {
     transform: var(--transform-scale-x);
     transition: var(--transition-cut);
 
