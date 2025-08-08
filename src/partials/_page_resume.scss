@@ -1,37 +1,49 @@
-.early_history {
-    align-self: center;
-}
+.pane_details {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-.work_history,
-.education {
-    .chunk_list {
-        flex-direction: column-reverse !important;
+    .spacer_container {
+        height: min-content !important;
+        width: 100%;
+        padding-top: 0 !important;
     }
 }
 
-.awards,
-.certifications,
-.education,
-.work_history {
-    max-width: 44%;
+.spacer_contact {
+    justify-content: start !important;
+
+    .contact_info .chunk .header {
+        background-color: var(--background-1);
+
+        white-space: nowrap;
+        text-align: justify;
+    }
 }
 
-.software,
-.prog_languages {
+.about_me {
+    padding: 0 var(--spacing-thicc) var(--spacing-horizontal);
+}
+
+.early_history {
+    justify-self: center;
+}
+
+.prog_languages,
+.software {
     * {
         margin: 0.5rem;
     }
 }
 
+.software_row {
+    grid-template-columns: 60% auto;
+}
+
 .software {
-    max-width: 55%;
-
-    .premiere_pro {
-        color: var(--accent-purple);
-    }
-
-    .photoshop {
-        color: var(--accent-blue);
+    .android {
+        color: var(--accent-green);
     }
 
     .anubis {
@@ -54,11 +66,19 @@
         color: var(--accent-orange);
     }
 
-    .libreoffice {
+    .ios {
         color: var(--white-0);
     }
 
+    .libreoffice {
+        color: var(--accent-green);
+    }
+
     .linux {
+        color: var(--white-0);
+    }
+
+    .macos {
         color: var(--white-0);
     }
 
@@ -86,6 +106,14 @@
         color: var(--white-0);
     }
 
+    .photoshop {
+        color: var(--accent-blue);
+    }
+
+    .premiere_pro {
+        color: var(--accent-purple);
+    }
+
     .prusaslicer {
         color: var(--accent-orange);
     }
@@ -105,8 +133,6 @@
 }
 
 .prog_languages {
-    max-width: 30%;
-
     .asciidoc {
         color: var(--accent-cyan);
     }
@@ -167,4 +193,15 @@
     */
 
     color: #1d63edff;
+}
+
+@media only screen and (max-width: 500px) {
+    .awards,
+    .certifications,
+    .education,
+    .prog_languages,
+    .software,
+    .work_history {
+        width: 100%;
+    }
 }
