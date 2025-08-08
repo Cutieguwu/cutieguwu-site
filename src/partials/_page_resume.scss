@@ -42,6 +42,10 @@
 }
 
 .software {
+    .three_dimensional_printing {
+        color: var(--accent-magenta);
+    }
+
     .android {
         color: var(--accent-green);
     }
@@ -122,6 +126,7 @@
         color: var(--accent-blue);
     }
 
+    .cnc_machining,
     .vectric_aspire {
         color: var(--accent-red);
         rotate: 90deg;

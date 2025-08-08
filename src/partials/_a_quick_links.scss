@@ -6,7 +6,8 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    a {
+    > a,
+    > div {
         display: grid;
 
         background-color: var(--background-3);
@@ -23,7 +24,7 @@
         text-decoration: none;
         color: var(--white-1);
 
-        * {
+        > * {
             margin: 0;
             padding: 0;
 
